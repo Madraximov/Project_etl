@@ -1,18 +1,19 @@
 # Airflow ELT Examples
 
-This repository contains examples of ELT (Extract, Load, Transform) processes implemented using Apache Airflow. ELT processes are commonly used in data engineering to extract data from various sources, transform it into a usable format, and load it into a destination for analysis.
+This repository contains examples of ELT (Extract, Load, Transform) processes using Apache Airflow.
 
 ## ELT Processes
 
-### 1. Open Food Facts ETL to MS SQL Server
+### 1. JSON File to MS SQL
 
 #### Overview
 
-This ELT process fetches product data from the Open Food Facts API, transforms it, and loads it into a Microsoft SQL Server database.
+This DAG loads data from a JSON file into a MS SQL database.
 
-#### Components
+### 2. API to MS SQL Server
 
-- **DAG Name:** `open_food_facts_etl_to_mssql`
-- **Description:** ETL process for fetching product data from Open Food Facts API, transforming it, and loading it into MS SQL Server.
-- **Schedule:** Runs daily.
-- **Dependencies:** No dependencies on past runs (catchup=False).
+#### Overview
+
+This DAG fetches data from an API and loads it into a MS SQL Server database.
+
+
